@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        min-width:300px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      input[type=submit] {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+    </style>
+
+    <script src="popup.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Couch Bugger</h1>
+    <h3>Revision History</h3>
+    <div id="container">
+      <form id="pop-up" action="sayhello">
+          <span>Enter paths to scan history (separated by commas)</span>
+          <p>
+          <input size="50" type="text" id="path" value="">  
+          </p>
+          <input type="submit" value="Go!">
+      </form>
+       
+    </div>
+
+    <div>
+      <p>
+        <strong>Psst</strong>: Keep your Chrome console open
+      </p>
+    </div>
+  </body>
+</html>
